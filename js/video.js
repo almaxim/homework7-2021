@@ -58,16 +58,15 @@ document.querySelector("#slider").addEventListener("change", function(){
 
 
 document.querySelector("#vintage").addEventListener("click", function() {
+	// var element = document.getElementById("vintage");
+	video.classList.add("oldSchool");
 	console.log("Old School Style");
-	video.addClass("OldSchool");
-});
+  });
 
-document.querySelector("#orig").addEventListener("click", function() {
+  document.querySelector("#orig").addEventListener("click", function() {
+	// var element = document.getElementById("orig");
+	video.classList.remove("oldSchool");
 	console.log("Remove Old School Style");
-	video.classList.remove("OldSchool");
 });
 
-// document.getElementById("slower").addEventListener("click", function() {
-// 	console.log("Slow Down");
-// 	document.getElementById(video).playbackRate = -0.05;
-// });
+
